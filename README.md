@@ -88,7 +88,7 @@ Where did this come from? Didn't we do everything right?
 
 No. We didn't. Let's see WHY by dry running this code.
 
-We can see in figure 4, when we are initially at maze[0][0], //1 and //2 are checked and we are allowed to go further. Then, the recursive function for 't' is run which fails the base case as sr<0 and we move to the 'l' call. Again the base case fails. Now we move to the 'd' statement. As it runs we move a step down and reach maze[1][0].
+When we are initially at maze[0][0], //1 and //2 are checked and we are allowed to go further. Then, the recursive function for 't' is run which fails the base case as sr<0 and we move to the 'l' call. Again the base case fails. Now we move to the 'd' statement. As it runs we move a step down and reach maze[1][0].
 
 maze[1][0] passes the test cases and we move a step up. We again reach the cell we were at previously.
 
@@ -209,7 +209,7 @@ Since after all the recursion calls have run completely and returned, we mark th
 Now when we retreat , the ticks are also wiped out as can been seen below:
 
 
-When this is the case, we again try to look for a new path which is illustrated by Figure 8.2.
+When this is the case, we again try to look for a new path which is illustrated by
 
 
 In the previous traversal we tried to go on the path 8.1 and after the path was retreated and we once again marked the visited cells as unvisited, we went looking for a new path.
